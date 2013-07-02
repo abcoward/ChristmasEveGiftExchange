@@ -25,10 +25,6 @@ public class ListMaker {
 		this.Family.remove(person);
 	}
 	
-	public void removePerson(String first_name, String family_name){
-		//this is more complex finish later
-	}
-	
 	public String getCurrentList(){
 		String result = "";
 		for(int i = 0; i < this.Family.size(); i++){

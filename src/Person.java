@@ -5,7 +5,6 @@ public class Person {
 	private String family_name;
 	
 	public Person(String first_name, String family_name){
-//s = Character.toUpperCase(family_name.charAt(0)) + family_name.substring(1);
 		this.family_name = Character.toUpperCase(family_name.charAt(0)) + family_name.substring(1).toLowerCase().trim();
 		this.first_name = Character.toUpperCase(first_name.charAt(0)) + first_name.substring(1).toLowerCase().trim();
 	}
