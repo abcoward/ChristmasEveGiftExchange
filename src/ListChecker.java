@@ -67,7 +67,7 @@ public class ListChecker {
 					this.FamilyRandom.get(i).getFamily_name() + '\n';
 		}
 			
-		return result + "Function Called " + this.TimesListTried + " Times";
+		return result + '\n' + '\t' + "Function Called " + this.TimesListTried + " Times";
 	}
 	
 }

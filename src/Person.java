@@ -5,8 +5,9 @@ public class Person {
 	private String family_name;
 	
 	public Person(String first_name, String family_name){
-		this.family_name = family_name;
-		this.first_name = first_name;
+//s = Character.toUpperCase(family_name.charAt(0)) + family_name.substring(1);
+		this.family_name = Character.toUpperCase(family_name.charAt(0)) + family_name.substring(1).toLowerCase().trim();
+		this.first_name = Character.toUpperCase(first_name.charAt(0)) + first_name.substring(1).toLowerCase().trim();
 	}
 
 	public String getFirst_name() {
@@ -14,7 +15,7 @@ public class Person {
 	}
 	
 	public void setFirst_name(String first_name) {
-		this.first_name = first_name;
+		this.first_name = Character.toUpperCase(first_name.charAt(0)) + first_name.substring(1).toLowerCase().trim();
 	}
 	
 	public String getFamily_name() {
@@ -22,7 +23,7 @@ public class Person {
 	}
 	
 	public void setFamily_name(String family_name) {
-		this.family_name = family_name;
+		this.family_name = Character.toUpperCase(family_name.charAt(0)) + family_name.substring(1).toLowerCase().trim();
 	}
 	
 	
