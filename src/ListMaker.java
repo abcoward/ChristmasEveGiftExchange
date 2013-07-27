@@ -11,11 +11,11 @@ public class ListMaker {
 	
 	public void addPerson(Person person){
 		this.Family.add(person);
-	};
+	}
 	
 	public void addPerson(String first_name, String family_name){
 		this.Family.add(new Person(first_name,family_name));
-	};
+	}
 	
 	public void removePerson(int index){
 		this.Family.remove(index);
